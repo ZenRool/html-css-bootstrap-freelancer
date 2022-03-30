@@ -11,34 +11,30 @@ ul {
 }
 
 img {
-    /* object-fit: contain; */
+    
     width: 100%;
 }
+.img-box {
+    width: 300px;
+    height: 320px;
+}
+h2 {
+    text-transform: uppercase; 
 
-/* .bg-b {
-    background-color: black;
 }
-.bg-w {
-    background-color: white;
-} */
-.c-b {
-    color: black;
-}
-.c-w {
-    color: white;
-}
+
 /* star-line */
 .star-line {
-    font-size: 35px;
+    font-size: 20px;
     
-    /* da cambiare nel media q  */
-    width: 700px;
+    width: 250px;    
 }
 .star-line .line-star {
-    transform: translate(0,25px);
+    transform: translate(0,15px);
 
     border-radius: 4px;
     height: 4px;
+    
 
 
 }
@@ -48,7 +44,7 @@ header {
     height: 80px;
     line-height: 80px;
 
-    color: white;
+    
     font-size: 20px;
 }
 header .home {
@@ -124,21 +120,55 @@ header .wrapper-r .visible-menu  li {
 }
 .jumbo p {
     margin-top: 20px;
-    font-size: 2rem;
+    font-size: 1.1rem;
+    
 }
 
 
 /* Media  */
+@media all and (min-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    .star-line {
+        width: 400px;
+        font-size: 25px;
+    }
+    .star-line .line-star {
+        transform: translate(0,20px);
+    }
+
+
+    header .home {
+        
+        font-weight: 900;
+    }
+    .jumbo p {
+        font-size: 1.4rem;
+    }
+    
+}
 @media all and (min-width: 992px) {
     h1 {
         font-size: 4rem;
     }
 
-
-    header .home {
-        font-size: 30px;
-        font-weight: 900;
+    .star-line {
+        width: 700px;
+        font-size: 35px;
+    }
+    .star-line .line-star {
+        transform: translate(0,25px);
     }
 
+
+    header .home {
+        
+        font-weight: 900;
+    }
+    .jumbo p {
+        font-size: 1.8rem;
+    }
     
 }
