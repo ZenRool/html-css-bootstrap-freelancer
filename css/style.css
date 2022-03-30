@@ -1,3 +1,8 @@
+
+:root {
+    --ms-turquoise: #19bc9c;
+
+}
 /* utility  */
 a {
     text-decoration: none;
@@ -27,7 +32,8 @@ h2 {
 .star-line {
     font-size: 20px;
     
-    width: 250px;    
+    width: 250px;  
+    margin-bottom: 20px;  
 }
 .star-line .line-star {
     transform: translate(0,15px);
@@ -111,7 +117,7 @@ header .wrapper-r .visible-menu  li {
 /* fine header  */
 /* jumbo  */
 .jumbo {
-    background-color: #19bc9c;
+    background-color: var(--ms-turquoise);
     width: 100%;
     color: white;
     padding: 40px 0;
@@ -123,7 +129,56 @@ header .wrapper-r .visible-menu  li {
     font-size: 1.1rem;
     
 }
+.wallet section{
 
+    cursor: pointer;
+}
+.wallet section div {
+    
+    position: relative;
+}
+.wallet section:hover div div{
+    
+    background-color: rgba(25, 188, 156 , 0.7) ;
+
+    /* non so perché non funzioni così  */
+    /* background-color: rgba(var(--ms-turquoise), 0.8);
+    background-color: var(--ms-turquoise); */
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    /* transform: translate(-50%, -50%); */
+    top: 0;
+    left: 0;
+    
+    
+
+}
+.wallet section:hover div div::after { 
+    content: "+";
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    font-size: 50px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    
+    text-align: center;
+    
+    line-height: 80px;
+
+
+
+}
+.wallet section img{
+    border-radius: 10px;
+
+    
+}
 
 /* Media  */
 @media all and (min-width: 768px) {
@@ -147,6 +202,8 @@ header .wrapper-r .visible-menu  li {
     .jumbo p {
         font-size: 1.4rem;
     }
+
+
     
 }
 @media all and (min-width: 992px) {
