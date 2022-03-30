@@ -27,6 +27,15 @@ h2 {
     text-transform: uppercase; 
 
 }
+.btn-outline-turc {
+    border-color: white;
+    color: white;
+}
+.btn-outline-turc:hover {
+    border-color: var(--ms-turquoise);
+    color: var(--ms-turquoise);
+    background-color: #fff;
+}
 
 /* star-line */
 .star-line {
@@ -178,6 +187,15 @@ header .wrapper-r .visible-menu  li {
     border-radius: 10px;
 
     
+}
+.about {
+    background-color: var(--ms-turquoise);
+    color: white;
+
+}
+.about p {
+    font-size: 1.2rem;
+
 }
 
 /* Media  */
