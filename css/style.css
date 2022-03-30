@@ -14,9 +14,31 @@ img {
     /* object-fit: contain; */
     width: 100%;
 }
-h1 {
 
-    text-transform: uppercase; 
+/* .bg-b {
+    background-color: black;
+}
+.bg-w {
+    background-color: white;
+} */
+.c-b {
+    color: black;
+}
+.c-w {
+    color: white;
+}
+/* star-line */
+.star-line {
+    font-size: 35px;
+    
+    /* da cambiare nel media q  */
+    width: 700px;
+}
+.star-line .line-star {
+    transform: translate(0,25px);
+
+    border-radius: 4px;
+    height: 4px;
 
 
 }
@@ -96,7 +118,13 @@ header .wrapper-r .visible-menu  li {
     background-color: #19bc9c;
     width: 100%;
     color: white;
-    padding: 40px;
+    padding: 40px 0;
+
+    text-transform: uppercase; 
+}
+.jumbo p {
+    margin-top: 20px;
+    font-size: 2rem;
 }
 
 
