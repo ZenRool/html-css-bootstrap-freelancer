@@ -36,6 +36,36 @@ h2 {
     color: var(--ms-turquoise);
     background-color: #fff;
 }
+.btn-turc {
+    border-color: white;
+    color: white;
+    background-color: var(--ms-turquoise);
+}
+.btn-turc:hover {
+    border-color: var(--ms-turquoise);
+    color: var(--ms-turquoise);
+    background-color: white;
+}
+.ms-contact-form {
+    width: 100%;
+}
+.ms-contact-form .form-control {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+
+    padding-top: 10px;
+
+}
+.ms-contact-form textarea {
+    height: 7em;
+}
+.ms-contact-form .form-control:hover,.ms-contact-form .form-control:focus {
+    box-shadow: none;
+
+
+}
 
 /* star-line */
 .star-line {
@@ -137,6 +167,11 @@ header .wrapper-r .visible-menu  li {
     margin-top: 20px;
     font-size: 1.1rem;
     
+}
+
+/* main  */
+main > section  {
+    padding: 30px 0;
 }
 .wallet section{
 
